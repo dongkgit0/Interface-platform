@@ -1,0 +1,109 @@
+[
+  {
+    "id": "callTaskCreateByVoiceTransferAgent",
+    "name": "创建外呼任务（语音转坐席）",
+    "path": "/openapi/V2.0.6/callTaskCreateByVoiceTransferAgent",
+    "body_template": {
+      "seq": "123456",
+      "userData": "userData",
+      "taskName": "创建测试",
+      "multiplier": 1,
+      "agentGroup": 9999,
+      "CIDGroup": 53,
+      "callees": [
+        "12345678901",
+        "12345678902"
+      ],
+      "maxConcurrence": 1,
+      "cyclePlayTimes": 1,
+      "voiceFileID": "39",
+      "concurrenceMode": 0,
+      "weekday1": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "0"
+      ],
+      "startTime1": "00:00:00",
+      "endTime1": "23:59:59"
+    }
+  },
+  {
+    "name": "查询任务信息",
+    "path": "/openapi/V2.0.6/queryTaskInfo",
+    "body_template": {
+      "seq": "5271",
+      "userData": "ASD123",
+      "taskID": "550",
+      "taskName": "创建测试"
+    },
+    "id": "iface_a15e42e2"
+  },
+  {
+    "id": "iface_fafac4ca",
+    "name": "获取班组列表信息",
+    "path": "/openapi/V2.0.6/getAgentGroupList",
+    "body_template": {
+      "seq": "5271",
+      "userData": "ASD123"
+    },
+    "body_template_b": {
+      "seq": "5271",
+      "userData": "ASD123"
+    }
+  },
+  {
+    "id": "iface_8213d616",
+    "name": "外呼任务信息修改",
+    "path": "/openapi/V2.0.6/modifyCallTaskInformation",
+    "body_template": {
+      "concurrenceMode": 0,
+      "multiplier": 40.5,
+      "name": "默认外呼任务111",
+      "taskID": "393"
+    },
+    "body_template_b": {
+      "concurrenceMode": 0,
+      "multiplier": 40.5,
+      "name": "默认外呼任务111",
+      "taskID": "1064"
+    }
+  },
+  {
+    "id": "iface_8f964279",
+    "name": "停止外呼任务",
+    "path": "/openapi/V2.0.6/stopCallTask",
+    "body_template": {
+      "seq": "5271",
+      "taskID": "717",
+      "taskName": "",
+      "userData": "userData"
+    },
+    "body_template_b": {
+      "seq": "5271",
+      "taskID": "3795",
+      "taskName": "",
+      "userData": "userData"
+    }
+  },
+  {
+    "id": "iface_81f4fefb",
+    "name": "启动外呼任务",
+    "path": "/openapi/V2.0.6/startCallTask",
+    "body_template": {
+      "seq": "5271",
+      "taskID": "717",
+      "taskName": "",
+      "userData": "userData"
+    },
+    "body_template_b": {
+      "seq": "5271",
+      "taskID": "3795",
+      "taskName": "",
+      "userData": "userData"
+    }
+  }
+]

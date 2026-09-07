@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>接口测试平台 - 登录</title>
+<link rel="stylesheet" href="api_test_platform/api_test_platform/static/login.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="space">
+    <div class="brand">
+      <div class="dot">◆</div>
+      <div>
+        <h1>接口测试平台</h1>
+        <p>OUTBOUND API CONSOLE</p>
+      </div>
+    </div>
+
+    <div class="stars" id="stars"></div>
+
+    <div class="shooting-star"></div>
+    <div class="shooting-star s2"></div>
+
+    <div class="orbit-system">
+      <div class="orbit" style="--o:0.221; --opa:0.30"></div>
+      <div class="orbit" style="--o:0.364; --opa:0.24"></div>
+      <div class="orbit" style="--o:0.529; --opa:0.19"></div>
+      <div class="orbit" style="--o:0.693; --opa:0.15"></div>
+      <div class="orbit" style="--o:0.843; --opa:0.12"></div>
+      <div class="orbit" style="--o:0.979; --opa:0.09"></div>
+      <div class="orbit" style="--o:1.093; --opa:0.07"></div>
+      <div class="orbit" style="--o:1.179; --opa:0.055"></div>
+
+      <div class="sun"></div>
+
+      <!-- 水星 -->
+      <div class="orbit-planet" style="--r:62; --dur:8s; --delay:-0.7s; --ly:16px;">
+        <div class="planet" style="width:5.5px;height:5.5px;background:radial-gradient(circle at 35% 30%,#f5f7fa 0%,#c9cdd3 45%,#8a9098 75%,#5d626a 100%);"></div>
+        <div class="planet-label">Mercury</div>
+      </div>
+      <!-- 金星 -->
+      <div class="orbit-planet" style="--r:102; --dur:14s; --delay:-4.9s; --ly:16px;">
+        <div class="planet" style="width:9px;height:9px;background:radial-gradient(circle at 35% 30%,#ffedc9 0%,#eecb86 45%,#c79b54 75%,#97713a 100%);"></div>
+        <div class="planet-label">Venus</div>
+      </div>
+      <!-- 地球 -->
+      <div class="orbit-planet" style="--r:148; --dur:22s; --delay:-12.5s; --ly:17px;">
+        <div class="planet" style="width:10px;height:10px;background:radial-gradient(circle at 35% 30%,#a8d8f4 0%,#5b9bd6 45%,#2e6bab 78%,#1b4a7d 100%);"></div>
+        <div class="planet-label">Earth</div>
+      </div>
+      <!-- 火星 -->
+      <div class="orbit-planet" style="--r:194; --dur:34s; --delay:-28.3s; --ly:15px;">
+        <div class="planet" style="width:7px;height:7px;background:radial-gradient(circle at 35% 30%,#ee9a78 0%,#cf5f40 45%,#9a3c24 75%,#6e2917 100%);"></div>
+        <div class="planet-label">Mars</div>
+      </div>
+      <!-- 木星(最大) -->
+      <div class="orbit-planet" style="--r:236; --dur:60s; --delay:-11.7s; --ly:29px;">
+        <div class="planet" style="width:38px;height:38px;background:radial-gradient(circle at 35% 28%,rgba(255,255,255,0.5),rgba(255,255,255,0) 50%),repeating-linear-gradient(180deg,#e9cba0 0px,#c68f52 2px,#d9b078 3px,#b8844c 5px,#e9cba0 6px),radial-gradient(circle at 35% 30%,#f8e3c0 0%,#c68f52 60%,#7d5730 100%);"></div>
+        <div class="planet-label">Jupiter</div>
+      </div>
+      <!-- 土星(带环) -->
+      <div class="orbit-planet" style="--r:274; --dur:90s; --delay:-61s; --ly:28px;">
+        <div class="planet" style="width:26px;height:26px;background:radial-gradient(circle at 35% 30%,#fbecc9 0%,#dbb078 45%,#a87f45 75%,#7a5a2e 100%);"></div>
+        <div class="ring" style="width:60px;height:19px;"></div>
+        <div class="planet-label">Saturn</div>
+      </div>
+      <!-- 天王星 -->
+      <div class="orbit-planet" style="--r:306; --dur:120s; --delay:-53s; --ly:17px;">
+        <div class="planet" style="width:13px;height:13px;background:radial-gradient(circle at 35% 30%,#d2f6f0 0%,#83d8cd 45%,#4da89d 78%,#2e7d73 100%);"></div>
+        <div class="planet-label">Uranus</div>
+      </div>
+      <!-- 海王星 -->
+      <div class="orbit-planet" style="--r:330; --dur:170s; --delay:-155.8s; --ly:17px;">
+        <div class="planet" style="width:12px;height:12px;background:radial-gradient(circle at 35% 30%,#93a9ec 0%,#5468cf 45%,#35479e 78%,#22307a 100%);"></div>
+        <div class="planet-label">Neptune</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-panel">
+    <div class="login-box">
+      <h2>登录</h2>
+      <div class="sub">请输入账号密码进入测试台</div>
+      <form>
+        <div class="field">
+          <label>账号</label>
+          <input type="text" placeholder="请输入账号" value="admin">
+        </div>
+        <div class="field">
+          <label>密码</label>
+          <input type="password" placeholder="请输入密码" value="123456">
+        </div>
+        <button class="login-btn" type="button">登 录</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+
+<script src="api_test_platform/api_test_platform/static/login.js"></script>
+</body>
+</html>

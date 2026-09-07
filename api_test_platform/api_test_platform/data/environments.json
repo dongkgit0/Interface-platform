@@ -1,0 +1,34 @@
+[
+  {
+    "id": "env_50",
+    "name": "5.0环境",
+    "base_url": "http://172.16.10.151",
+    "customer": "C48",
+    "api_key": "15CB3DD0E0632DCCD98D5EE62C066BEC",
+    "auth_seq": "3023"
+  },
+  {
+    "id": "env_30",
+    "name": "3.0环境",
+    "base_url": "http://172.16.10.139",
+    "customer": "C224",
+    "api_key": "4E5C0D2BFCF28BFF0A8D2235D200D589",
+    "auth_seq": "3023"
+  },
+  {
+    "name": "3.0环境AI",
+    "base_url": "https://ai.dipcc.com/",
+    "customer": "C39",
+    "api_key": "57F2296A65B77043BB66D31ACBD60C50D92895B9",
+    "auth_seq": "3023",
+    "id": "env_993d9ed4"
+  },
+  {
+    "name": "5.0环境AI",
+    "base_url": "http://172.16.10.151",
+    "customer": "C43",
+    "api_key": "6327B6E1F14C09F41A86ED0E83591DE8",
+    "auth_seq": "3023",
+    "id": "env_83ed75ff"
+  }
+]
